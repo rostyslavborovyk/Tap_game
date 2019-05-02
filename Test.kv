@@ -1,0 +1,65 @@
+#:kivy 1.0.9
+
+<BoxContainer>:
+
+    orientation: "vertical"
+
+    button1: button1
+    button2: button2
+    button3: button3
+    button4: button4
+    button5: button5
+    button6: button6
+    button7: button7
+    button8: button8
+    pbar: pbar
+
+    ProgressBar:
+        id: pbar
+        size_hint: 1, 0.05
+        value: root.pb_value
+
+    GridLayout:
+        size_hint: 1, 0.95
+        rows: 2
+        cols: 4
+        Button:
+            id: button1
+            on_release:
+                root.action(1)
+            font_size: 50
+        Button:
+            id: button2
+            on_release:
+                root.action(2)
+            font_size: 50
+        Button:
+            id: button3
+            on_release:
+                root.action(3)
+            font_size: 50
+        Button:
+            id: button4
+            on_release:
+                root.action(4)
+            font_size: 50
+        Button:
+            id: button5
+            on_release:
+                root.action(5)
+            font_size: 50
+        Button:
+            id: button6
+            on_release:
+                root.action(6)
+            font_size: 50
+        Button:
+            id: button7
+            on_release:
+                root.action(7)
+            font_size: 50
+        Button:
+            id: button8
+            on_release:
+                root.action(8)
+            font_size: 50
