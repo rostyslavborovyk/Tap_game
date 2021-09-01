@@ -11,6 +11,8 @@ import time
 import random
 
 
+
+
 class BoxContainer(BoxLayout):
 
     def __init__(self, **kwargs):
@@ -22,7 +24,7 @@ class BoxContainer(BoxLayout):
     decreasing_speed = NumericProperty(0.2)
     current_button = ObjectProperty(None)
     current_button_id = NumericProperty(0)
-
+ІІ
     def main_loop(self, *args):
         self.pb_value -= self.decreasing_speed
 
